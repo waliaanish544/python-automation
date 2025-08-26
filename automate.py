@@ -7,18 +7,18 @@ from obsws_python import ReqClient
 # -------------------
 
 # Microsoft Teams meeting link
-MEETING_LINK = "https://teams.live.com/meet/9322158007356?p=pSBspphCHOCRwK3dPy"
+MEETING_LINK = "ur meeting link"
 
 # Attendance portal link
-ATTENDANCE_LINK = "https://mml.accenture.com/trainee-portal"
+ATTENDANCE_LINK = "ur attendence link"
 
 # OBS WebSocket settings
 OBS_HOST = "localhost"
 OBS_PORT = 4455
-OBS_PASSWORD = "mypassword123"
+OBS_PASSWORD = "OBS_password"
 
 # Meeting duration in seconds (e.g., 9 hours = 32400 seconds)
-MEETING_DURATION = 32400  # change to your actual meeting length
+MEETING_DURATION = [recording time in seconds]  # change to your actual meeting length
 
 # -------------------
 # 1️⃣ Open Teams Meeting
@@ -31,14 +31,14 @@ time.sleep(20)  # wait for Teams to load (adjust if needed)
 # 2️⃣ Open Attendance Portal
 # -------------------
 print("Opening Attendance Portal...")
-webbrowser.open("https://mml.accenture.com/trainee-portal")
+webbrowser.open("ur attendence portal link")
 time.sleep(5)  # give it a few seconds to open
 
 # -------------------
 # 3️⃣ Connect to OBS and start recording
 # -------------------
 try:
-    obs = ReqClient(host="localhost", port=4455, password="mypassword123")
+    obs = ReqClient(host="localhost", port=4455, password="OBS_password")
     print("Connected to OBS ✅")
     
     # Start recording
@@ -48,8 +48,8 @@ try:
     # -------------------
     # 4️⃣ Wait for the meeting to finish
     # -------------------
-    print(f"Recording for {32400} seconds...")
-    time.sleep(32400)
+    print(f"Recording for {recording time in seconds} seconds...")
+    time.sleep(recording time in seconds)
 
     # Stop recording
     obs.stop_record()

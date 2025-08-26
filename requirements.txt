@@ -1,0 +1,6 @@
+pyyaml==6.0.2
+APScheduler==3.10.4
+pytz==2024.1
+keyboard==0.13.5
+psutil==6.0.0
+obsws-python==1.7.0

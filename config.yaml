@@ -12,7 +12,7 @@ obs:
 teams:
   meetings:
     - title: "Stream Training"
-      url: "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmE1MGQ5MjktZGE3Yi00MGIxLWE3ZDQtZmU1YmUyYjU1NzYw%40thread.v2/0?context=%7b%22Tid%22%3a%22e0793d39-0939-496d-b129-198edd916feb%22%2c%22Oid%22%3a%227e519cf3-6c17-407e-ab5d-7b60b2674197%22%7d"
+      url: "ur meeting link"
       start_time: "08:30"
       duration_min: 540
       days: ["mon","tue","wed","thu","fri"]
